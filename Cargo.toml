@@ -1,0 +1,13 @@
+[package]
+name = "rust_learning"
+version = "0.1.0"
+edition = "2024"
+
+# Mengarah pada biner yang dituju baik di dir bin atau main (package name)
+default-run = "rust_learning"
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.7", features = ["derive"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
